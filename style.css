@@ -1,0 +1,478 @@
+html body{
+  height: 100%;
+  width: 100%;
+}
+
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+
+    background: antiquewhite;
+  
+  font-family: Garamond;
+    font-size: 18px;
+    color: black;
+
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+img.background {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 150%;
+      height: 100%;
+      -webkit-filter: blur(10px); 
+      filter: blur(10px);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+  background-position: center;
+  
+}
+
+
+
+
+/* Define some styles for the theme button */
+#theme-button {
+ background-color: black;
+  color: white;
+  font-size: 13;
+  font-weight: bold;
+  font-family: Garamond;
+  border-block-color: after-white-space;
+  padding: 2px 3px;
+  cursor: pointer;
+  border-color: lightseagreen; 
+  border-radius: 60px;
+}
+
+.dark-mode {
+  background: black;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+
+#sign-petition{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  padding: 5px 3px 5px 3px;
+  text-align: left;
+}
+
+/* Customize Dark Mode Theme */
+
+
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+
+
+
+
+
+
+ h4, h5, h6 {
+  color: black;
+  text-align: left;
+  margin: auto;
+
+}
+
+h1, h2,h4,h5,h6{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22;
+  font-display: block;
+  text-align: center;
+
+}
+
+
+p {
+  text-align: left;
+  font-size: 15;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding: 10px 5px 10px 5px;
+  text-align: left;
+  
+}
+
+
+.signatures{
+  width: 45%;
+  padding-right: 10px;
+}
+
+
+.ForUs{
+  width:45%;
+  padding: 2px 5px 2px 5px;
+  text-orientation: upright;
+  
+}
+
+
+.social{
+  font-size: 18;
+  column-count: 2;
+  column-gap: 13px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.climate{
+    font-size: 18;
+  column-count: 2;
+  column-gap: 8px;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+
+
+
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+
+/* Select and style elements by class name or ID */
+
+
+/* Example: This styles elements with class="header"*/
+.header-container {
+ font-size: 20;
+  font-style: Garamond;
+  font-display: block;
+  padding: 2px 3px 2px 3px;
+  flex-direction: row;
+  display: flex;
+}
+
+
+      container {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+      flex-direction: row;
+		}
+		
+		    .column {
+			flex: 1;
+			padding: 10px;
+		}
+		
+		    .column img {
+			width: 700px;
+			height: 500px;
+      justify-content: space-between;
+      gap: 20;
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      
+		}
+		
+		    .header {
+      display: flex;
+			flex: 1;
+			padding: 10px;
+			text-align: center;
+			font-size: 40px;
+			font-weight: bold;
+      flex-direction: row;
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+		}
+
+#Home {
+  color:#000000;
+}
+
+#About{
+  background-color: #785700;
+
+}
+#News{
+  background-color: #785700;
+  
+}
+#More{
+  background-color: #785700;
+
+}
+
+
+.Agric-container {
+  padding: 5px 5px 5px 5px;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.agric {
+ 
+  overflow: hidden; 
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+}
+
+
+
+.agric img {
+   width: auto;
+  height: auto;
+  object-fit: cover; 
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.agric:hover img {
+  transform: scale(1.05); 
+  
+}
+/* Example: This styles an element with an id="header-img" */
+
+
+.revealable {
+  position : relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.revealable.active {
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+
+
+
+.button{
+background-color: gray;
+font-size: 14;
+font-display: white;
+text-align: center;
+padding: 3px 2px;
+cursor: pointer;
+border-bottom: rebeccapurple;
+border-radius: 60%;
+border-color: mediumslateblue;
+}
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+
+.navbar {
+  background-color: #606060;
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 1;
+   z-index: 100;
+ 
+}
+
+.navbarhead {
+  margin: 0;
+  color: black;
+  padding: 0px 100px;
+  font-size: 30px;
+  flex: 1;
+  font-weight: bold;
+  padding-left: 50px;
+ 
+}
+
+.navbar ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding-left: 50px;
+  display: flex;
+  float: right;
+  margin-right: 20px;
+ 
+}
+
+.navbar ul li {
+  margin: 5px;
+  font-size: 14px;
+  color: lightgray;
+  padding: 5px;
+}
+
+.navbar ul li a {
+  font-family: Garamond;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  padding: 6px 2px;
+  transition: 0.3s ease-in-out;
+  border-radius: 60px;
+  border-left-color: bisque;
+  border-color: burlywood;
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+  background-color: white;
+}
+
+.navbar ul li a:active {
+  font-weight: bold;
+  background-color: mintcream;
+}
+  
+
+
+/* Style rules for flex-item 1 */
+.ForUs{
+  width: 55%;
+  padding-right: 10px;
+  text-align: left;
+  font-size: 13; 
+}
+
+
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 25rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-btn {
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+
+.modal-btn:hover {
+  background-color: #ff8c82;
+}
+
+/* Style set for all flex-items */
+
+button:hover {
+  cursor: pointer;
+}
+
+.active:link{
+  color: black;
+  font-size:medium;
+ 
+}
+
+div:visited{
+  color: beige;
+}
+
+h2:hover{
+  color: midnightblue;
+}
+
+h3:hover{
+  color: seagreen;
+}
+h4:hover{
+  color: seagreen;
+}
+h5:hover{
+  color: seagreen;
+}
+
+
+
+
+.footer {
+  font-size: 13;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6%;
+  padding: 1px 1px;
+  background-color: darkgray ;
+}
+ 
